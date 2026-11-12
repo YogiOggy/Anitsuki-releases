@@ -1,3 +1,7 @@
+![Uploading library.webp…]()
+<img width="1600" height="896" alt="home" src="https://github.com/user-attachments/assets/d276b31d-b50c-4821-ba78-716581d3c070" />
+
+<img width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/11293126-387a-4170-931d-3d99a0f857bd" />
 <div align="center">
 
 <img src="logo.png" alt="Anitsuki logo" width="120">
