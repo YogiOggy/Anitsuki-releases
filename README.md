@@ -1,94 +1,103 @@
-![Uploading library.webp…]()
-<img width="1600" height="896" alt="home" src="https://github.com/user-attachments/assets/d276b31d-b50c-4821-ba78-716581d3c070" />
-
-<img width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/11293126-387a-4170-931d-3d99a0f857bd" />
 <div align="center">
 
-<img src="logo.png" alt="Anitsuki logo" width="120">
+<img src="https://github.com/user-attachments/assets/914fe974-889c-4cd9-b553-9cc7ae3278a1" alt="Anitsuki" width="110">
 
 # Anitsuki
 
-*Same skies, different worlds.*
+**Same skies, different worlds.**
 
-A cinematic desktop anime client for late-night binges.<br>
+A cinematic desktop anime client for Windows, built for late-night viewing.<br>
 Install it, open it, press play. No extensions, no DNS changes, no setup.
 
-[**Download the latest release**](../../releases/latest) · [Website](YOUR_WEBSITE_LINK) · [Telegram](https://t.me/AnitsukiOfficial)
+[Download](../../releases/latest) &nbsp;•&nbsp; [Website](https://anitsuki.pages.dev/) &nbsp;•&nbsp; [Telegram](https://t.me/AnitsukiOfficial)
 
 </div>
 
----
+<br>
 
-## What is Anitsuki?
+## Overview
 
-Anitsuki is a free Windows desktop app built around one idea: watching anime should feel calm and effortless. It opens straight into a dark, cinematic interface, remembers where you left off, and keeps itself up to date in the background.
+Anitsuki is a free desktop application that turns watching anime into a calm, uninterrupted experience. It opens straight into a dark, cinematic interface, remembers where you stopped, and keeps itself up to date in the background.
+
+There is nothing to configure on first launch. Pick a title and watch it.
 
 ## Features
 
-**Watching**
-- Pick up where you left off with a **Continue Watching** row and an **Up Next** queue
-- Choose **sub or dub** and set your default server and language once
-- Several servers with **automatic fallback**, so if one fails the app tries the next
-- A **mini player** that keeps your episode going while you browse
+| | |
+|---|---|
+| **Watching** | Continue Watching row and Up Next queue. Sub or dub. A default server and language you set once. Automatic fallback across servers when one fails. A mini player that keeps your episode running while you browse. |
+| **Discovery** | A rotating featured banner on Home. Search with filters, shortcuts for Airing Now, This Season, Movies and Top Rated, and genre browsing. A weekly Release Calendar with countdowns that highlights titles from your own list. |
+| **Anime pages** | Overview, episode list, characters, relations and related titles in one place. |
+| **Library** | Organise by Watching, Completed, Planning, Paused, Dropped and Rewatching. Search, sort and filter. Track progress, rate titles and count rewatches. Correct a wrong match yourself with the Match button. |
+| **Accounts** | Sign in to track your list, or use Guest mode and skip it entirely. |
+| **Updates** | Silent background updates, with a small notice when a new version is ready. |
+| **Control** | 18+ titles are hidden by default and appear only if you turn them on in Settings. A built-in Help section with setup steps and a FAQ. |
 
-**Discovering**
-- **Home** with a rotating featured banner
-- **Browse** with search, filters, quick shortcuts (Airing Now, This Season, Movies, Top Rated) and genre cards
-- **Release Calendar** showing what airs this week, with countdowns and your own list highlighted
-- Detailed anime pages with episodes, characters, relations and related titles
+## Requirements
 
-**Your library**
-- Sort your collection by status: Watching, Completed, Planning, Paused, Dropped and Rewatching
-- Search, sort and filter your library
-- Track progress, give ratings, and count rewatches
-- Fix a wrong match yourself with the **Match** button on any anime page
-- **Guest mode** if you would rather not sign in
+| | |
+|---|---|
+| **Operating system** | Windows 10 or Windows 11 |
+| **Network** | Internet connection |
+| **Account** | None required |
 
-**Everything else**
-- **Zero setup**: nothing to configure on first launch
-- **Silent updates**: new versions install in the background, and a small popup tells you when one is ready
-- **18+ titles are hidden by default** and only appear if you switch them on in Settings
-- A built-in **Help** section with setup steps and a FAQ
+## Installation
 
-## Screenshots
+1. Open the [latest release](../../releases/latest) and download the installer (`.exe`).
+2. Run the installer.
+3. If Windows SmartScreen shows a warning, select **More info**, then **Run anyway**.
 
-<p align="center">
-<img src="shots/home.webp" alt="Home" width="48%">
-<img src="shots/library.webp" alt="Library" width="48%">
-<img src="shots/details.webp" alt="Anime details" width="48%">
-<img src="shots/calendar.webp" alt="Release calendar" width="48%">
-</p>
+Anitsuki is a new application that is not yet widely downloaded, which is why SmartScreen may flag it. After the first install, updates are delivered automatically.
 
-## Install
+### Verify your download
 
-1. Go to the [latest release](../../releases/latest) and download the installer (`.exe`).
-2. Run it. Windows 10 and 11 are supported.
-3. If Windows SmartScreen shows a warning, click **More info**, then **Run anyway**. Anitsuki is new and not yet widely downloaded, which is why the warning appears. The release page lists the file’s SHA-256 so you can verify your download.
+Each release lists the SHA-256 checksum of its installer. To check your copy, run this in PowerShell from the folder containing the file:
 
-That’s it. After the first install, updates arrive on their own.
+```powershell
+Get-FileHash .\Anitsuki-Setup-<version>.exe -Algorithm SHA256
+```
+
+The result should match the value on the release page.
 
 ## FAQ
 
-**An episode won’t play.**
-Switch servers from the player. If none of them has it, the anime isn’t available on any server right now, so try again later.
+<details>
+<summary><b>An episode will not play.</b></summary>
+<br>
+Switch servers from the player. If none of them has the episode, it is not available on any server right now. Try again later.
+</details>
 
-**Do I need an account?**
+<details>
+<summary><b>Do I need an account?</b></summary>
+<br>
 No. Guest mode covers browsing and watching. Sign in only if you want to track your list.
+</details>
 
-**Is it open source?**
-This repository only holds release builds.
+<details>
+<summary><b>How do updates work?</b></summary>
+<br>
+Anitsuki checks for new versions and installs them quietly in the background. A small notice tells you when an update is ready.
+</details>
+
+<details>
+<summary><b>Is the source code available?</b></summary>
+<br>
+This repository contains release builds only.
+</details>
 
 ## Updates and support
 
-- Release news and patch notes: [Telegram channel](https://t.me/AnitsukiOfficial)
-- Found a bug or have an idea? Tell me on Telegram. Please include your Windows version, the app version and what you were doing.
+- **Release news and patch notes:** [Telegram channel](https://t.me/AnitsukiOfficial)
+- **Bug reports and suggestions:** message on Telegram and include your Windows version, the Anitsuki version, and what you were doing when the problem occurred.
+
+Release notes are published with every release on the [Releases](../../releases) page.
 
 ## Disclaimer
 
 Anitsuki is an independent desktop client. It does not host or store any video content and is not affiliated with any anime studio or service.
 
----
+<br>
 
 <div align="center">
-Made by a solo student developer, mostly after midnight. 🌙
+<sub>Built and maintained by an independent developer.</sub>
 </div>
